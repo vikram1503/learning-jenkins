@@ -18,7 +18,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'echo this is build'
-                sh 'sleep 10'
             }
         }
         stage('Test') {
@@ -38,7 +37,7 @@ pipeline {
                 echo "Toggle: ${params.TOGGLE}"
                 echo "Choice: ${params.CHOICE}"
                 echo "Password: ${params.PASSWORD}"
-                echo "triggered test"
+                echo "triggered test again"
             }
         }
     }
